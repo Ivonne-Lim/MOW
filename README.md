@@ -1,2 +1,34 @@
 # MOW
 "Meals on Wheels" project for Spring Boot
+
+## Spring Boot Project
+
+The Spring Boot project has to be imported into Spring Tool Suite (STS) to install the Meals on Wheels (MOW) application.
+
+The web.config file and its webapps subfolder can be found in the wwwroot folder added. However, the WAR file and the Azure App Service resource (if applicable) have to be created first to deploy the MOW application elsewhere with the WAR file (renamed as "ROOT.war") put in the webapps subfolder.
+
+## MySQL Database
+
+The following SQL scripts, to create the database, can be found in the mydb(mow) folder added. However, a connection from MySQL Workbench has to be created first to do so.
+
+* Script excluding creating the administrator profile (filename prefixed with “import_”).
+* Script including creating the administrator profile (filename prefixed with “export_”).
+
+## Node JS Project
+
+The Express JS scripts and their public subfolder can be found in the file-upload-app folder added. However, the Node JS project has to be created first to install or deploy the file server elsewhere.
+
+### Notes
+
+The following files have each of their confidential data replaced with the word “placeholder” therefore the Spring Boot project is not fully complete. The data can be obtained from the student separately for restoration.
+
+1. application.properties (MySQL datasource password) in src\main\resources
+2. application.properties.bak (MySQL datasource password) in src\main\resources
+3. application.yml (Meta app / client secret) in src\main\resources
+4. application.yml.bak (Meta app / client secret) in src\main\resources
+5. api_key.txt (Google Geocoding API key) in src\main\resources\config
+6. password.txt (Gmail app password) in src\main\resources\config
+7. MealService.java (Google Geocoding API key) in src\main\java\org\merrymeal\mow\service
+8. ProfileService.java (Gmail app password) in src\main\java\org\merrymeal\mow\service
+
+The entire target folder, including class and WAR files, is also removed since it also contains the confidential data which can be extracted. Therefore, if needed, the Spring Boot source code has to be re-compiled for running then the Spring Boot project re-packaged for deployment.
