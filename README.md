@@ -18,6 +18,10 @@ The following SQL scripts, to create the database, can be found in the mydb(mow)
 
 The Express JS scripts and their public subfolder can be found in the file-upload-app folder added. However, the Node JS project has to be created first to install or deploy the file server elsewhere.
 
+## JMeter Tests
+
+The JMeter test scripts and their results files can be found in the jmeter-scripts folder added. However, the paths to the results files have to be set correctly first to run the tests elsewhere.
+
 ### Notes
 
 The following files have each of their confidential data replaced with the word “placeholder” therefore the Spring Boot project is not fully complete. The data can be obtained from the student separately for restoration.
